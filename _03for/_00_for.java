@@ -54,7 +54,7 @@ public class _00_for {
 				cnt2++;
 			}
 		}
-		System.out.println(sum2/cnt2);
+		System.out.println((double)sum2/cnt2);
 		
 		System.out.println("최저점수 제외한 평균");
 		int minNum = 1000;
@@ -70,7 +70,7 @@ public class _00_for {
 			cnt3++;
 		}
 		
-		System.out.println((sum3-minNum)/(cnt3-1));
+		System.out.println((double)(sum3-minNum)/(cnt3-1));
 	}
 
 }

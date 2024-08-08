@@ -77,7 +77,6 @@ public class test03 {
 			}
 		}
 		
-		
 		// Q8
 		int[] x = {6,5,9};
 		int[] y = {4,10,6};

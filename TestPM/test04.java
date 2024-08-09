@@ -116,12 +116,15 @@ public class test04 {
 		
 		// Q10 ===============================================================================
 		System.out.println("Q10 987654321의 숫자를 변수2개와 for문 한개로 모든자리수를 던한합을 구하시오");
-		int number = 5422;
-		int sumAll = 0;
-		for(int i = 10; i <= 1000000000; i*=10) {
-			sumAll += (number%i)/(i/10);
-		}
-		System.out.println(sumAll);
+//		int number = 5422;
+//		int sumAll = 0;
+//		for(int i = 10; i <= 1000000000; i*=10) {
+//			sumAll += (number%i)/(i/10);
+//		}
+//		System.out.println(sumAll);
+		
+//		*********************10번문제 해결못함 다시 확인 필요**********************************
+	
 	}
 
 }

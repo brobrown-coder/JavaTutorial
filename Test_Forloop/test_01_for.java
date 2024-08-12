@@ -15,8 +15,8 @@ public class test_01_for {
 		// Q2 1부터 100까지의 숫자중 홀수의 총합을 구하시오
 		System.out.println("Q2 1부터 100까지의 숫자중 홀수의 총합을 구하시오");
 		int sum1to100 = 0;
-		for(int i = 0; i <100; i++) {
-			if((i+1)%2 == 1) {
+		for(int i = 1; i <= 100; i++) {
+			if((i)%2 == 1) {
 				sum1to100 += i;
 			}
 		}
@@ -32,7 +32,7 @@ public class test_01_for {
 		// Q4 배열에서 배열의 값이 짝수인 것만 출력하시오
 		System.out.println("Q4 배열에서 배열의 값이 짝수인 것만 출력하시오");
 		int[] arr = {45,23,25,64,3,24,48};
-		for(int i = 0; i<7 ; i++) {
+		for(int i = 0; i<arr.length ; i++) {
 			if(arr[i]%2 == 0) {
 				System.out.print(arr[i]+" ");
 			}

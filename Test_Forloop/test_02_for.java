@@ -30,7 +30,7 @@ public class test_02_for {
 		int[] arr10 = {45,23,25,64,3,24,48};
 		int maxValue = arr10[0];
 		int maxValueIndex = 0;
-		for(int i=0; i<7; i++) {
+		for(int i=0; i<arr10.length; i++) {
 			if(maxValue < arr10[i]) {
 				maxValue = arr10[i];
 				maxValueIndex = i;
@@ -60,7 +60,7 @@ public class test_02_for {
 		int[] arr = {1,2,3,0,0,0,1,2,3,4,5,2,2,2,2,0,0,0,0,0,3,3};
 		int countZero = 0;
 		int maxValueTunnel = 0;
-		for(int i = 1; i < 22; i++) {
+		for(int i = 1; i < arr.length; i++) {
 			if((arr[i] == 0) && (arr[i] == arr[i-1])) {
 				countZero++;
 				if(maxValueTunnel < countZero+1) {
@@ -115,5 +115,10 @@ public class test_02_for {
 		}
 		System.out.println("문자는 " + ttt.charAt(alphabetIndex));
 		System.out.println("길이는 " + maxAlphabetLength);
+		
+		// Q15 압축하시오
+		// String ttt = "aabbbcccaaaaddbbbaaaaa"; 압축 하는 방법 a2b3c3a4d2b3a5
+		System.out.println("**Q15** 압축하시오");
+		
 	}
 }

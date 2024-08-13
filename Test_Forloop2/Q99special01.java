@@ -12,14 +12,19 @@ public class Q99special01 {
 		//		// 인덱스 0 - 9까지를 숫자로 정의한다.
 		//		조건 : 형변환은 사용하지 않는다. 메서드는  charAt()만 사용한다. 
 		String a = "6/4/3/2/5/1/4/5/6/7/8/9/1/2/3/4/5/6";
-		int[] b = new int[a.length()];
-		int cnt = 0;
-		int oneNumA = a.charAt(2);
-		for(int i = 0; i < a.length(); i++) {
-			
+		int[] num1to10 = {0,0,0,0,0,0,0,0,0,0};
+		for(int i = 0; i < 10; i++) {
+			for(int j = 0; j <a.length(); j++) {
+				if(i == (int)a.charAt(j)-48) {
+					num1to10[i] = num1to10[i]+1;
+				}
+			}
 		}
-		System.out.println(b[2]);
-	
+		for(int i = 0; i < 10; i++) {
+			System.out.println(i+"번의 개수는"+num1to10[i]);			
+		}
+		
+		
 	}
 
 }

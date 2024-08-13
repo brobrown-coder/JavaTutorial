@@ -12,7 +12,10 @@ public class Q05 {
 //		조건에 만족될때까지 문자 입력을 받는다.
 //		문자열을 앞으로 읽으나 뒤로 읽으나 같은 경우의 문자를 판별하는 코드를 작성하세요
 //		pass
-		
+//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass
+//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass
+//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass
+//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass//		pass
 	}
 
 }

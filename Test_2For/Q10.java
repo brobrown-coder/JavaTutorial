@@ -13,12 +13,30 @@ public class Q10 {
 		//		size가 2일경우에 7개이다. 
 		int[] arr = {1,0,0,0,1,1,1,0,0,0,0,1,1,1,1,0,0,0,1};
 		int size=2;
-		int countZero = 0;
-		for(int i =0; i < arr.length-1; i++) {
+		int cntZero = 0;
+		int cntStruc = 0;
+		int sumStruc = 0;
+		for(int i =0; i < arr.length; i++) {
+			cntStruc = 0;
+			cntZero = 0;
 			if(arr[i] == 0) {
-				countZero++;
+				for(int j = i; j <arr.length; j++) {
+					if(arr[i] == arr[j]) {
+						cntZero++;
+					}else {
+						break;
+					}
+				}
+				for(int k = 0; k <= cntZero; k++) {
+					if((cntZero-k-size) >= 0) {
+						cntStruc++;
+					}
+				}
+				sumStruc += cntStruc;
+				i = i+cntZero-1;
 			}
 		}
+		System.out.println("건물의 크기가 "+size+"만큼일때 "+sumStruc+"개의 건물을 지을 수 있다");
 	
 	}
 }

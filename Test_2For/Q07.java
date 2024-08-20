@@ -11,9 +11,21 @@ public class Q07 {
 		//		int money=4570;  // 가격
 		//		int pay = 10000;  //지불금액
 		
-		int money=4570;  // 가격
-		int pay = 10000;  //지불금액
-		int rest = pay-money;
+		// TODO Auto-generated method stub
+				int money=4570;  // 가격
+				int pay = 10000;  //지불금액
+				int rest = pay-money;
+				int n = 0;
+				int ten = 10;
+				System.out.println(rest+"원");
+				
+				for(int i = 0; i < 3; i++) {
+					n = (rest/ten)%10;
+					System.out.println(ten+"원 "+n+"개");
+					n = 0;
+					ten *= 10;
+				}
+
 		
 		
 		

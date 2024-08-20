@@ -9,15 +9,25 @@ public class Q09 {
 		//	String ttt ="aabbbcccaaaaddbbbaaaaa";
 		String ttt ="aabbbcccaaaaddbbbaaaaa";
 		int cnt = 0;
-		for(int i = 0; i < ttt.length()-1 ; i++) {
-			if(ttt.charAt(i) == ttt.charAt(i+1)) {
-				cnt++;;
-				System.out.println(ttt.charAt(i)+"  "+cnt);
-			}else {
-				cnt = 0;
-				continue;
+		int maxCnt = 0;
+		for(int i = 0; i < ttt.length(); i++) {
+			char temp = ttt.charAt(i);
+			cnt = 0;
+			if(temp == 'a') {
+				for(int j = i ; j < ttt.length(); j++) {
+					if(ttt.charAt(j) != 'a') {
+						break;
+					}else {
+						cnt++;
+					}
+				}
+			}
+			if(maxCnt < cnt) {
+				maxCnt = cnt;
+				i =i+cnt-1; // 중첩안되게
 			}
 		}
+		System.out.println(maxCnt);
 	}
 
 }

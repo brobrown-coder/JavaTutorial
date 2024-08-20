@@ -13,6 +13,7 @@ public class Q07 {
 		
 		int money=4570;  // 가격
 		int pay = 10000;  //지불금액
+		int rest = pay-money;
 		
 		
 		

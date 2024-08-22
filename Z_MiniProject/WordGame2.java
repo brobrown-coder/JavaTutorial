@@ -3,7 +3,7 @@ package Z_MiniProject;
 import java.util.Random;
 import java.util.Scanner;
 
-public class WordGame {
+public class WordGame2 {
 
 	public static void main(String[] args) {
 		Scanner in = new Scanner(System.in);
